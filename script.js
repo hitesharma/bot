@@ -30,7 +30,9 @@ function showResponse() {
         setTimeout(changeQuestion, 2000);
     }else if(num == 2)
     {
-        output.innerHTML = `So you are ${2020 - input} born`;
+        var d = new Date();
+        var n = d.getFullYear();
+        output.innerHTML = `So you are ${n - input} born`;
         inputBox.value = "";
         inputBox.setAttribute("placeholder", "Wait for 2 secs");
         ++num;
